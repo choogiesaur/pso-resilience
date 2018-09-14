@@ -13,3 +13,6 @@ C:\Users\choogie\Desktop\Gamecube Stuff\GCBanner>GCBanner.exe b opening.bnr open
 GCBanner v0.3 - loser 2003
 Converts between GC banners and 96x32 24bit tga files
 done
+
+// NOTE:
+// Can actually reinsert a .bmp banner with gc iso rebuilder, bmp needs to be 16 bit depth
