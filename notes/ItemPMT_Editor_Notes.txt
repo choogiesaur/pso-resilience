@@ -5,7 +5,7 @@ Notes:
 -Also make sure to check other tabs to see if anything got messed up
 	Armors should begin with "Frame",
 	Shields with "barrier"
-	mags with "MAG"
+	Mags with "MAG"
 	Specials should be normal (no AXE, listed effects are accurate)
 Seemingly safe way to go about it is, set item ID to out of bounds like 850. -1 didn't seem to work.
 Afterwards you delete it and it shouldnt decrement any ids.
@@ -13,7 +13,10 @@ Afterwards you delete it and it shouldnt decrement any ids.
 When you add an item, add it in the same section to get properties as close to the base item as possible.
 For instance, replacing Musashi with custom made Crimson Assassin saber basically works, but the sabers don't have the special animation. However, deleting an item (in my case 00AA00 "????") then adding custom C-ASSASSIN SABERS to the G-ASSASSIN SABERS section (00A000) created an item at location 00A001 with the special unfolding animation property of the base weapon.
 
-Modifying rarity (number of stars) only seemed to work while the item ID is valid/for an existing weapon. So switched C ASSASSIN SABERS to item id 444, then set rarity to 10, then switched item id back to 55. EDIT: Actually, seems not to work after all. All items of a single ID get stars modified at once?
+Modifying rarity (number of stars) only seemed to work while the item ID is valid/for an existing weapon. So switched C ASSASSIN SABERS to item id 444, then set rarity to 10, then switched item id back to 55. 
+
+EDIT: Actually, seems not to work after all. All items of a single ID get stars modified at once?
+Deleted DB'S Sword AUW 3070 (10 star rarity) of ID 411, updated text, pointed 00AA01 to this id, now rarity shows up as 10*.
  
 
 ItemPMT Editor Possible Bugs:
