@@ -1,0 +1,9 @@
+When you export texture as .dds, it DOES keep transparency. To view it in photoshop, ctrl+click the alpha channel to select the transparent areas. Then in layers click add mask.
+
+Steps:
+1. Export .dds
+2. In the case of the HUD I tried shifting the hue/saturation. Saved it as DXT3 without mip maps.
+3. f256_hyouji.prs in particular, seems to be a PRS compressed .gvm. Decompressing it with prsutil, then naming the extension as .gvm allows it to be read as such.
+4. Import the texture. Experiment with the options, I chose GC to be safe and "No transparency", but transparency still worked. Some other settings seem to work too.
+5. Save the texture pack as gamecube .gvm.
+6. Compress with prsutil, and re insert into game.
