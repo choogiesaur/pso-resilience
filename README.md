@@ -8,6 +8,8 @@ Enhanced modification project for *Phantasy Star Online Episodes I&II* for Ninte
 - Custom weapons and armor!
 - Custom quests
 
+This project has been on hold for some time but I hope to get back to it soon. Please delve through my notes section to see my findings!
+
 Current EXP rates:
 ```
 Normal: x4 EXP
