@@ -17,3 +17,4 @@ Hard: x4 EXP
 Very Hard: x4 EXP
 Ultimate: x4 EXP
 ```
+(Custom Item Mod 1 - Crimson Assassin's Sabers)[https://www.youtube.com/watch?v=hz6xePR5fhw]
