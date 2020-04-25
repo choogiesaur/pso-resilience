@@ -1,0 +1,94 @@
+Notes 4/25/2020
+
+- OK so pointing weapons to diff photon colors works
+- Modifying one to black/white DOESNT work
+- Adding one seems to not work either
+- Maybe add one with similar colors to another?
+
+MAG STUFF:
+
+Black Sato, 5def/150pow/45dex
+200 iq, 120 sync
+
+MY/E/P
+023FC8D9 <- D9 Pilla
+5702FB3A
+F7116300
+78C80705
+
+023FC8D9
+8303FB3A <- Changed 5 def to 8 def, first two bytes here changed
+F7116300
+78C80705
+
+MY/E/G
+023FC8D1 <- D1 Golla
+5702FB3A
+F7116300
+78C80705
+
+MY/E/F
+023FC8C1 <- C1 Farla
+5702FB3A
+F7116300
+78C80705
+
+MY/E/L
+023FC8E1 < - E1 Leila
+5702FB3A
+F7116300
+78C80705
+
+023FC8E1
+5702FB3A
+F7116300
+32C80705 <- C8 = 200 IQ
+
+023FC8E1
+5702FB3A
+F7116300
+32C70705 <- C7 = 199 UQ
+
+023FC8D9
+5702FB3A
+F7116300
+78C80705 <- last byte 05 = black
+
+023FC8D9
+5702FB3A
+F7116300
+78C80706 <- last byte 06 = white
+
+Copying quest packs:
+Copy everything in the pack directory but TextShopEnglish.rel - the original one for Plus should stay (quest names will prob be wrong)
+
+Item Creator:
+
+Func 16: "Pick 2nd Item Digit" 
+hen 20 is called for
+Based on what item digit you pick, 20 calls helper func to loads that digit into R96 and returns
+back to function 20 which returns
+back to function 16
+then let what was in R96 -> R61
+then let what was in R60 -> R59 (r60 was the result of list of first item digits so its 00-03)
+
+Call 20 again after asking for "3rd item digit"
+then let what was in R96 -> R62
+jmp to 284
+284 branches based on item type choice (00weap/01armor/02mag/03item)
+WEAPON, ARMOR, and MAG all behave same:
+keep calling 20 to pick next item digit, load into R63, R64, R65, ...
+
+Kapu Kapu
+2.45.200
+220.86.2.122
+31.22.12.74.33
+
+let R1, R2 (set register 1 to value in register 2)
+leti R1, 12345678 (set register to hex value 12345678 - leti used for integers only)
+
+open_pack_select        Opens a window with all your items in it
+get_item_id    reg        puts the selected item's Id into reg.  Follows open_pack_select
+get_item_info    reg1 reg2    takes the item in reg1 and puts it into reg2 as an array (3dwords in 12 registers)
+
+I think get_item_id may give a pointer to the item in inventory.  I need to test if you can loop that or not (and how it's formatted)
