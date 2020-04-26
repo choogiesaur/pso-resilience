@@ -3,9 +3,13 @@ Notes 4/25/2020
 - OK so pointing weapons to diff photon colors works
 - Modifying one to black/white DOESNT work
 - Adding one seems to not work either
-- Maybe add one with similar colors to another?
+- Maybe add one with similar colors values to another?
+- Modify the color range in one entry?
 
-MAG STUFF:
+### MAG STUFF: ###
+
+-So these have 16 bytes total where as the item create function only takes 12 bytes
+- Therefore probably can't create a mag with all values (pb, etc)
 
 Black Sato, 5def/150pow/45dex
 200 iq, 120 sync
@@ -62,10 +66,42 @@ F7116300
 Copying quest packs:
 Copy everything in the pack directory but TextShopEnglish.rel - the original one for Plus should stay (quest names will prob be wrong)
 
-Item Creator:
+### Item Creator: ###
+
+Weapon Code:
+XXXXXX YYZZ00 AABB CCDD EEFF
+
+XXXXXX = Weapon Code
+YY     = Grind level
+ZZ     = Weapon Special
+
+AA  = 1st % param     BB  = 1st % digit
+CC  = 2nd % param     DD  = 2nd % digit
+EE  = 3rd % param     FF  = 3rd % digit
+
+% param:
+1 = Native, 2 = A.Beast, 3 = Machine, 4 = Dark, 5 = Hit
+
+% digit:
+00 =   0 %     05 =   5 %
+0A =  10 %     14 =  20 %
+1F =  30 %     32 =  50 %
+4B =  75 %     5A =  90 %
+64 = 100 %     78 = 120 %
+     
+You can also give %'s to Special Weapons instead of a name,
+but you can't give 'em a name AND %'s!
+The name cipher won't be described here for now.
+
+Kapu Kapu
+2.45.200
+220.86.2.122
+31.22.12.74.33
+
+### Item Creator Quest Breakdown ###
 
 Func 16: "Pick 2nd Item Digit" 
-hen 20 is called for
+then 20 is called for picking digit
 Based on what item digit you pick, 20 calls helper func to loads that digit into R96 and returns
 back to function 20 which returns
 back to function 16
@@ -79,16 +115,41 @@ jmp to 284
 WEAPON, ARMOR, and MAG all behave same:
 keep calling 20 to pick next item digit, load into R63, R64, R65, ...
 
-Kapu Kapu
-2.45.200
-220.86.2.122
-31.22.12.74.33
-
 let R1, R2 (set register 1 to value in register 2)
 leti R1, 12345678 (set register to hex value 12345678 - leti used for integers only)
 
 open_pack_select        Opens a window with all your items in it
 get_item_id    reg        puts the selected item's Id into reg.  Follows open_pack_select
+// jmpi_= R100, FFFFFFFF, XXX
+// this occurs in gallons shop
+// if result of get_item_id == FFFFFFFF, says "oh you're quitting" so i think when b is pressed
+// the output is FFFFFFFF
+
 get_item_info    reg1 reg2    takes the item in reg1 and puts it into reg2 as an array (3dwords in 12 registers)
 
 I think get_item_id may give a pointer to the item in inventory.  I need to test if you can loop that or not (and how it's formatted)
+
+jmpi_!= reg1, hex value, function
+// if reg1 not equal to hex value, jump to function
+
+jmpi_>  reg1, hex value, function
+// if reg greater than hex value, jump to function
+// the i in jmpi signifies integer, for registers use jmp_x instead of jmpi_x
+
+let reg1, reg2
+// let reg1 equal the value in reg2
+leti reg1, 0000000F
+// let reg1 equal the integer value F
+
+Gallons photon enhancement logic:
+if R110 is != 00000000: // first byte?
+if R114 is > 0000003F: // fifth byte?
+if R114 is > 000000BF: 
+    add_msg 'That is not a weapon.'
+    add_msg 'Please select a weapon.'	
+
+if R114 is > 0000007F: (more than 127 - makes sense bc it's the max %!)
+if R111 is < 00000089: (less than 147 dec)
+if R111 is > 000000A4: (more than 164 dec)
+	message 000000A5, 'Hmm. I'm sorry, but I am<cr>unable to increase the<cr>Photon attribute.'
+    add_msg 'Would you like to<cr>select another weapon?'
