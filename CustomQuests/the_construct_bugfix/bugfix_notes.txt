@@ -1,0 +1,3 @@
+ConstructBugfix.qst
+  - fixed bug during item % generation where wrong function was called, creating a loop
+  - some typos lawl :)
