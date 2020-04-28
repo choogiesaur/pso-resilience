@@ -1,3 +1,10 @@
 ConstructBugfix.qst
+  - most similar to the original
   - fixed bug during item % generation where wrong function was called, creating a loop
+  - just remove the subroutine FSOD demo
   - some typos lawl :)
+
+ConstructTest.qst
+  - add some experimental functions
+    - Show Difficulty Flags
+    - Set Flags (!!! Be careful with this !!!)
