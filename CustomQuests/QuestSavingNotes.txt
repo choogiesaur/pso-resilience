@@ -1,0 +1,10 @@
+1. Load and save everything as Server Quest GC
+	- for raw quests that can be inserted into an .iso, use Quest Files manager and export both
+	- take note if the .dat is empty or not (if it is the quest wont have npcs/warps)
+
+2. If testing with fuzziqer server, export as Kohle GC
+
+3. Filenames should be pretty short and boring in config.ini or it barfs
+
+4. Keep trying if fuzzi download doesn't work and pay attention to the 
+   generated files (if the names look messed up there's a problem)

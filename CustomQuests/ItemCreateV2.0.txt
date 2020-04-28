@@ -1,0 +1,15 @@
+Item Create V2.0
+
+Create an item with
+specific attributes
+based on hex values
+
+Info:
+ Create items with
+ specific attributes.
+ Refer to an item hex
+ value guide. Originally
+ by soulja, updated by
+ choogiesaur
+ 	CGPlease don't abuse
+ it by cheating.
