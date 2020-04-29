@@ -1,12 +1,14 @@
 Notes:
--To add an item, basically have to delete another item. Doing this is a little tricky.
--Probably best to stick to principle of deleting a weapon when adding a weapon, deleting a tool when adding a tool, armor, etc..
--Make sure the item IDs look ok. Deleting item in the middle of a tier or "section" of items (sword family, or book of katana family for instance) decrements item ids of the rest of the items.
--Also make sure to check other tabs to see if anything got messed up
+- To add an item, basically have to delete another item. Doing this is a little tricky.
+- Probably best to stick to principle of deleting a weapon when adding a weapon, deleting a tool when adding a tool, armor, etc..
+- Make sure the item IDs look ok. Deleting item in the middle of a tier or "section" of items 
+  (sword family, or book of katana family for instance) decrements item ids of the rest of the items.
+- Also make sure to check other tabs to see if anything got messed up
 	Armors should begin with "Frame",
 	Shields with "barrier"
 	Mags with "MAG"
 	Specials should be normal (no AXE, listed effects are accurate)
+
 Seemingly safe way to go about it is, set item ID to out of bounds like 850. -1 didn't seem to work.
 Afterwards you delete it and it shouldnt decrement any ids.
 
@@ -24,3 +26,13 @@ Deleted DB'S Sword AUW 3070 (10 star rarity) of ID 411, updated text, pointed 00
 ItemPMT Editor Possible Bugs:
 - Add special - Pushes armor,units,mags back by one
 - Delete item and it decrements or increments all ids
+
+** Update 4/20/20
+- Add a new "event item" next to christmas present, easter egg, jack o lantern
+- Add two possible items, PGF and Syncesta
+- In the actual item tier under tools, set Jack o lantern to 999
+- Try adding an item; it adds saber of ID 148 and pushes back all the ids...bad
+- But then you delete the saber and add another item. It creates an item of id 1000
+- You can now edit the ids and stats to make sense and items are not pushed back
+- INTERESTING: I deleted the ???? item in the last weapon tier, 00AA00, and forgot. Went to test the new event item,
+My untekked items have their name in blue like normal, but display their actual name instead of ????. Prob fixed if I don't delete the ???? weapon.

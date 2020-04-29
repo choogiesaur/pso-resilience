@@ -170,3 +170,27 @@ Copy everything in the pack directory but TextShopEnglish.rel - the original one
 (the names will be wrong)
 
 Also, the offline ep 1 quests seem to function without a .dat or am i crazy? maybe the info is baked in somewhere else?
+
+### FLAGS ###
+So the flag setting to unlock difficulties in The Construct *does* work.
+But whether or not it's done correctly is a different story. (they all say may not work correctly)
+By some accounts it can mess up a save file so BE CAUTIOUS setting these or any flags.
+
+It looks at the current difficulty, if normal mode:
+gset 0035 "Hard Mode Unlocked!"
+
+if hard mode
+gset 0037 "Very Hard Mode Unlocked!"
+
+now if on VERY HARD:
+gset 0037 "Ultimate Mode Unlocked"
+
+A set of every flag is maintained for every difficulty, for every character.
+In the case of H -> VH and VH -> ULT, the same flag, 0037 is used.
+If set on hard, vhard is unlocked. If set on vhard, ult is unlocked.
+Some more flags may be required as explored in my construct_test quest, such as pillars per area, area unlock flags, visited *insert boss area* flags.
+
+All in all don't mess with these too much. PSOTOOLSV1/V2 though seems to do it correctly IIRC.
+Also, Bossanova/Requiem ends up unlocking next difficulty after you beat Falz.
+
+FOR PSO+: 009B = Cleared central dome fire swirl
