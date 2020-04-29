@@ -1,0 +1,39 @@
+There are a number of .dds format photoshop plugins for windows and the ONLY one that has worked for me is the old NVIDIA plugin:
+
+Get the legacy NVIDIA .dds plugin for photoshop:
+	- https://developer.nvidia.com/legacy-texture-tools
+	- click the Download button under dds utilities and it takes you to a page
+	- Scroll down to "Texture Tools for Adobe Photoshop" and download that
+Mirror:
+	- https://www.mediafire.com/file/ghp5o0or5d2rg7o/Photoshop_Plugins_x64_8.55.0109.1800.exe
+
+Preserving Transparency in Modified Textures:
+	When you export texture in VMT as .dds, it DOES keep transparency. To view it in photoshop, ctrl+click the alpha channel to select the transparent areas. Then under Layers click Add Mask.
+
+Steps to edit textures:
+1. Open PSO iso with GCR and extract the whole root folder
+2. Open the texture archive you want to modify with VMT.exe
+3. Click export all, select .dds, you'll get a folder full of the .dds textures
+4. Modify the ones you want with Photoshop:
+	- When you load it up, default sizes worked for me, maybe it should be 8 bit
+	- Might need to load mip maps, but most of the textures I've seen in VMT dont have them
+	- When you save it select DXT3 ARGB 8bpp | explicit alpha without mip maps
+		(if you can find a plugin that actually has these settings it may work)
+5. Import the texture in VMT choosing the gamecube format option. I chose "no transparency" but transparency still worked. Experiment with the options if it's not working.
+6. Save the texture pack as gamecube .gvm
+	- for .prs compressed texture archives: VMT seems to know how to decompress and open them;
+	- you will have to recompress with prsutil.exe afterwards then reinsert into the game
+	- f256_hyouji.prs in particular (HUD textures) seems to be a prs compressed .gvm
+	- others may or may not be prs compressed.
+7. Compress with prsutil (if applicable) and reinsert into the game.
+
+------------------------------------------------------------------------------------------
+
+old notes:
+1. Export .dds
+2. In the case of the HUD I tried shifting the hue/saturation. Saved it as DXT3 without mip maps.
+3. f256_hyouji.prs in particular, seems to be a PRS compressed .gvm. Decompressing it with prsutil, then changing the extension to .gcm allows it to be read as such.
+	3.a. Other textures may or may not be PRS compressed.
+4. Import the texture. Experiment with the options, I chose GC to be safe and "No transparency", but transparency still worked. Some other settings seem to work too.
+5. Save the texture pack as gamecube .gvm.
+6. Compress with prsutil, and re insert into game. (If applicable)
