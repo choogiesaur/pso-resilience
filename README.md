@@ -19,3 +19,5 @@ Ultimate: x4 EXP
 ```
 ## Videos:
 [Custom Item Mod 1 - Crimson Assassin's Sabers](https://www.youtube.com/watch?v=hz6xePR5fhw)
+
+[Custom Item Mod 2 - Custom gachapon-type item](https://www.youtube.com/watch?v=YomfU2Daxr4)
