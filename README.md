@@ -16,6 +16,12 @@ Normal: x4 EXP
 Hard: x4 EXP
 Very Hard: x4 EXP
 Ultimate: x4 EXP
+
+TODO: Change this to a tiered system:
+Normal: x3 EXP
+Hard: X2.5 EXP
+Very Hard: X2.25 EXP
+Ultimate: X2 EXP
 ```
 ## Videos:
 [Custom Item Mod 1 - Crimson Assassin's Sabers](https://www.youtube.com/watch?v=hz6xePR5fhw)
