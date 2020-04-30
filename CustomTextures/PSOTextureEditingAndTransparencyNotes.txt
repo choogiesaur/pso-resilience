@@ -29,11 +29,13 @@ Steps to edit textures:
 
 ------------------------------------------------------------------------------------------
 
-old notes:
-1. Export .dds
-2. In the case of the HUD I tried shifting the hue/saturation. Saved it as DXT3 without mip maps.
-3. f256_hyouji.prs in particular, seems to be a PRS compressed .gvm. Decompressing it with prsutil, then changing the extension to .gcm allows it to be read as such.
-	3.a. Other textures may or may not be PRS compressed.
-4. Import the texture. Experiment with the options, I chose GC to be safe and "No transparency", but transparency still worked. Some other settings seem to work too.
-5. Save the texture pack as gamecube .gvm.
-6. Compress with prsutil, and re insert into game. (If applicable)
+"IMPORTING PRE MADE SKINS.
+
+PSOBB has had skin mods for a very long time so if you just want a skin that already has been made then it is very possible to add them in to PSOGC too, while it is a itle bit more complicated.
+
+What you have to do is download the skin you desire and open it in VMT now this is where we do something totally different, for some reason my VMT can not export the images from the PSOBB AFS on their own as GVR so we have to click "Image" and then "Export All" NOW AKE SURE THAT YOU EXPORT THE IMAGES AS "GC GVR format" now that the files are all extracted find where the modded skin is, for example is image 5 to 9 contained the modded skins import them to the GameCubes AFS."
+
+Map textures:
+'a' preceding filename seems to mean Ultimate. e.g:
+map_aancient01.GVM - Ultimate mode textures for Ruins 1
+map_ancient01.GVM  - Normal mode textures for Ruins 1
