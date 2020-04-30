@@ -1,0 +1,4 @@
+- all dark falz (hp/luck mat/celestial armor)
+- dark falz ult -
+- pouilly slime redria boosted to 1/16 lavis cannon
+- skyly baranz syncesta doubled (changed rate from 150 to 158 -> 1/10000 -> 1/5000)
