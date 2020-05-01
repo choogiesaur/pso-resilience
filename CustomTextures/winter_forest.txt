@@ -1,0 +1,5 @@
+for pink UI: rename f256_hyouji.prs_PINK_HUD.prs to f256_hyouji.prs
+
+winter forest: forest1_winter.gvm to map_forest01.GVM
+	- it MAY work pasted over ultimate but dont know. there's also a separate
+	texture for the sky which is blue in n-vh, orange in ult
