@@ -28,4 +28,6 @@ Ultimate: X2 EXP
 
 [Custom Item Mod 2 - Custom gachapon-type item](https://www.youtube.com/watch?v=YomfU2Daxr4)
 
+[Custom Stage 1 - Snowy Forest 1](https://youtu.be/0QMon83GWyE)
+
 [PSO Gamecube Texture Modding Tutorial](https://youtu.be/EdiDt-sgjXk)
