@@ -1,0 +1,10 @@
+- use adxenc.exe with adx frontend guid
+- use audacity to find loop points in samples, not seconds
+- encode, then replace in iso HOWEVER
+level bgm seems to be in small files of 4,8,etc. measures each - different ones are played
+depending on the context like enemies approaching, etc. (forest music vs forest battle music)
+
+sooooo....it'll be pretty hard to mod the music for levels :) but POSSIBLE with a lot of work
+
+you can however swap the adx files in the root and have them trigger with qedit opcodes (bgm, etc.)
+tested with Fall Out Boy christmas song and it loops perfectly 8)
