@@ -1,0 +1,23 @@
+fogentry.dat can be edited! somewhat!
+BB vs GC: bb is 16kb as opposed to 8kb owing to the additional areas
+
+loading gc fogentry.dat in BB Fog Editor 003 works though most values are interpreted incorrectly
+the color and alpha values at least are editable, and are in REVERSE BYTE ORDER from bb
+
+e.g., the ARGB field in the base snowy forest mod for bb had a value of
+00F0F0F0
+
+which I flipped to->
+F0F0F000
+
+typed in that value, saved fogentry.dat, it loaded a nice white fog when I ran the iso.
+F000F000 was a bright magenta (looks really cool over white forest)
+
+so what you can do is play with the sliders to get the color you want, reverse the byte order, then save it.
+ultimately: should make a fog editor that properly reads the gc file so we can modify the other values
+
+gamecube:
+[F0F0F0][00]
+^color  ^alpha
+
+FF for alpha may be more opaque than 00 or vice versa, couldn't really see a difference
