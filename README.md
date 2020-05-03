@@ -31,3 +31,5 @@ Ultimate: X2 EXP
 [Custom Stage 1 - Snowy Forest 1](https://youtu.be/0QMon83GWyE)
 
 [PSO Gamecube Texture Modding Tutorial](https://youtu.be/EdiDt-sgjXk)
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T41O9SO)
