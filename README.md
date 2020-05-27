@@ -10,6 +10,8 @@ Enhanced modification project for *Phantasy Star Online Episodes I&II* for Ninte
 
 This project has been on hold for some time but I hope to get back to it soon. Please delve through my notes section to see my findings!
 
+For utilities that help with different PSO file formats look at: https://github.com/choogiesaur/pso-utils
+
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T41O9SO)
 
 ## Current EXP rates:
