@@ -31,3 +31,6 @@ Ultimate: X2 EXP
 [Custom Stage 1 - Snowy Forest 1](https://youtu.be/0QMon83GWyE)
 
 [PSO Gamecube Texture Modding Tutorial](https://youtu.be/EdiDt-sgjXk)
+
+## Demo of Snowy Forest mod on YouTube:
+[![Snowy Forest Mod Demo on Youtube](https://img.youtube.com/vi/0QMon83GWyE/0.jpg)](https://www.youtube.com/watch?v=0QMon83GWyE)
