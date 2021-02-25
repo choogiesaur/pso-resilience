@@ -34,3 +34,5 @@ Ultimate: X2 EXP
 
 ## Demo of Snowy Forest mod on YouTube:
 [![Snowy Forest Mod Demo on Youtube](https://img.youtube.com/vi/0QMon83GWyE/0.jpg)](https://www.youtube.com/watch?v=0QMon83GWyE)
+   - Click here for installable Snowy Forest 0.1: https://github.com/choogiesaur/pso-resilience/releases/tag/v0.1-alpha
+
