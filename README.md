@@ -5,14 +5,13 @@ Enhanced modification project for *Phantasy Star Online Episodes I&II* for Ninte
 - Relaxed rare drop rates for ultra-ubers
 - Unobtainable items enabled
 - Online-only items dispersed through offline play
+- Custom enemies!
 - Custom weapons and armor!
 - Custom quests!
 
 This project has been on hold for some time but I hope to get back to it soon. Please delve through my notes section to see my findings!
 
 For utilities that help with different PSO file formats look at: https://github.com/choogiesaur/pso-utils
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T41O9SO)
 
 ## Current EXP rates:
 ```
@@ -36,3 +35,4 @@ Ultimate: X2 EXP
 [![Snowy Forest Mod Demo on Youtube](https://img.youtube.com/vi/0QMon83GWyE/0.jpg)](https://www.youtube.com/watch?v=0QMon83GWyE)
    - Click here for installable Snowy Forest 0.1: https://github.com/choogiesaur/pso-resilience/releases/tag/v0.1-alpha
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T41O9SO)
