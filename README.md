@@ -2,7 +2,7 @@
 # pso-resilience 
 Enhanced modification project for *Phantasy Star Online Episodes I&II* for Nintendo Gamecube. Aims to bring:
 - Increased experience gain rates
-- Relaxed rare drop rates for ultra-ubers
+- Relaxed drop rates for ultra-uber rares
 - Unobtainable items enabled
 - Online-only items dispersed through offline play
 - Custom enemies!
@@ -12,6 +12,8 @@ Enhanced modification project for *Phantasy Star Online Episodes I&II* for Ninte
 This project has been on hold for some time but I hope to get back to it soon. Please delve through my notes section to see my findings!
 
 For utilities that help with different PSO file formats look at: https://github.com/choogiesaur/pso-utils
+
+Pull requests for any of my PSO work are welcome :)
 
 ## Current EXP rates:
 ```
