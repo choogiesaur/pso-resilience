@@ -1,9 +1,9 @@
 ![PSO Resilience Banner](https://github.com/choogiesaur/pso-resilience/blob/master/resources/psor_banner_large.png)
 # pso-resilience 
 Enhanced modification project for *Phantasy Star Online Episodes I&II* for Nintendo Gamecube. Aims to bring:
-- Custom enemies!
 - Custom weapons and armor!
 - Custom quests!
+- Custom enemies!
 - Increased experience gain rates
 - Relaxed drop rates for ultra-uber rares
 - Unobtainable items enabled
