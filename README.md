@@ -1,6 +1,6 @@
-![PSO Resilience Banner](https://github.com/choogiesaur/pso-resilience/blob/master/resources/psor_banner_large.png)
+![PSO Resilience Banner](https://raw.githubusercontent.com/choogiesaur/pso-resilience/refs/heads/main/resources/psor_banner_large.png)
 # pso-resilience 
-Enhanced modification project for *Phantasy Star Online Episodes I&II* for Nintendo Gamecube. Aims to bring:
+Gameplay enhancement / modification project for *Phantasy Star Online Episodes I&II* for Nintendo Gamecube. Aims to bring:
 - Custom weapons and armor!
 - Custom quests!
 - Custom enemies!
